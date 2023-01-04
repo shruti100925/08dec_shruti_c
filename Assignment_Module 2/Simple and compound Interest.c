@@ -16,10 +16,10 @@ int main()
 	SI= ( principle*time*rate)/100;
 	printf("\nSimple Interest=%f",SI);
 	
-//	CI=principle*(1+rate/100);
+	CI=principle*(1+rate/100);
 	CI= principle*(pow((1+rate/100),time));
-	//temp = CI - principle;
+	temp = CI - principle;
 	printf("\n-----Compound Interest----");
-	printf("\nValue=%f",CI);
+	printf("\nValue=%f",temp);
 	return 0;
 }
