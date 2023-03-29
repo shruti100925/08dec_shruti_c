@@ -5,7 +5,7 @@
 int main()
 {
     FILE *fp;
- 	char ch, data[50];
+ 	char ch;
  	
  	fp=fopen("output.txt","r");
  	ch=fgetc(fp);
@@ -18,8 +18,8 @@ int main()
 	 fclose(fp);
 	
 	fp= fopen("output.txt","a");
-	scanf("%s",&data);
-	fprintf(fp,"%s",data);
+	fscanf(fp,"%s",ch);
+	fprintf(fp,"%s",ch);
 	fclose(fp);
 	 
  
